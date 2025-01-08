@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">Home</a></li>
+            <li class="link-item"><a href="/editor" class="link">Editor</a></li>
+            <li class="link-item"><a href="/profile" class="link">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <div id="profile-info">
+            <!-- Profile info will be populated by JavaScript -->
+        </div>
+        <form id="profile-form">
+            <input type="text" id="username" placeholder="Username">
+            <textarea id="bio" placeholder="Bio"></textarea>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
